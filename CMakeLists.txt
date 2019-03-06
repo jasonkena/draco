@@ -32,6 +32,7 @@ include("${draco_root}/cmake/util.cmake")
 
 # Draco requires C++11 support.
 require_cxx_flag_nomsvc("-std=c++11" YES)
+require_cxx_flag_nomsvc("-fPIC" YES)
 
 option(ENABLE_CCACHE "Enable ccache support." OFF)
 option(ENABLE_DISTCC "Enable distcc support." OFF)
